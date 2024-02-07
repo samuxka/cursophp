@@ -1,0 +1,39 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #242424;
+}
+
+h1{
+   color: #fff;
+}
+
+section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    width: 200px;
+    height: 102;
+    
+}
+
+.box{
+    background: #00ffcc;
+    text-align: center;
+    border-radius: 10px;
+}
