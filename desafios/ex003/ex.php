@@ -10,15 +10,22 @@
 
 <body>
     <header>
-        <h1>Numero aleatorio</h1>
+        <h1>cotação</h1>
     </header>
     <main>
         <?php
-            $numeroAleatorio = rand(1, 100);
-            echo "o numero gerado foi $numeroAleatorio";
+        $cotacao = 5.17;
+        $real = $_GET["number"];
+
+        $dolar = $real / $cotacao;
+
+        $padrao = numfmt_create("pt_BR", NumberFormatter::CURRENCY);
+
+
+        echo "Seus " . numfmt_format_currency($padrao, $real, "BRL") . " equivalem a " . numfmt_format_currency($padrao, $dolar, "USD");
         ?>
-        <input type="submit" value="Gerar outro" reload>
+        <a href="javascript:history.go(-1)">voltar</a>
     </main>
 </body>
 
-</html>
+</html
